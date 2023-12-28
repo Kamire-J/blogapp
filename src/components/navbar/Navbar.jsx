@@ -15,15 +15,14 @@ const Navbar = () => {
         <Image src="/youtube.png" width={24} height={24} alt='youtube' />
       </div>
       <div className={styles.logo}>
-        Dev_Talks
+        devTalk
       </div>
       <div className={styles.links}>
-        <ThemeToggle/>
-        <Link href="/">Home</Link>
-        <Link href="/">Contact</Link>
-        <Link href="/">About</Link>
-        <Link href="/">Portfolio</Link>
-        <AuthLinks/>
+        <ThemeToggle />
+        <Link href="/" className={styles.link}>Homepage</Link>
+        <Link href="/" className={styles.link}>Contact</Link>
+        <Link href="/" className={styles.link}>About</Link>
+        <AuthLinks />
       </div>
     </div>
   )
