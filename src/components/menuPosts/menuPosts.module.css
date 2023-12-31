@@ -69,6 +69,11 @@
     width: max-content;
 }
 
+.category.analytics{
+    background-color: #6e4a41;
+    width: max-content;
+}
+
 .postTitle{
     font-size: 18px;
     font-weight: 500;

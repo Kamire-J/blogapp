@@ -1,0 +1,37 @@
+.categoryList {
+    margin-top: 35px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .categoryItem {
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .categoryItem.analytics {
+    background-color: #57c4ff31;
+  }
+  
+  .categoryItem.frontend {
+    background-color: #da85c731;
+  }
+  
+  .categoryItem.backend {
+    background-color: #7fb88133;
+  }
+  
+  .categoryItem.machine {
+    background-color: #ff795736;
+  }
+  
+  .categoryItem.mobile {
+    background-color: #ffb04f45;
+  }
+  
+  .categoryItem.games {
+    background-color: #5e4fff31;
+  }

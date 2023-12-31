@@ -8,7 +8,7 @@ const CategoryList = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Popular Topics</h1>
       <div className={styles.categories}>
-          <Link href="/blog?cat=style" className={`${styles.category} ${styles.style}`}>
+          <Link href="/blog?cat=style" className={`${styles.category} ${styles.analytics}`}>
             <Image  
               src="/style.png" 
               alt='' 
@@ -36,7 +36,7 @@ const CategoryList = () => {
               height={32} 
               className={styles.image} 
             />
-            Frontend
+            frontend
           </Link>
           <Link href="/blog" className={`${styles.category} ${styles.backend}`}>
             <Image  
@@ -48,7 +48,7 @@ const CategoryList = () => {
             />
             Backend
           </Link>
-          <Link href="/blog" className={`${styles.category} ${styles.emerging}`}>
+          <Link href="/blog" className={`${styles.category} ${styles.mobile}`}>
             <Image  
               src="/culture.png" 
               alt='' 
@@ -56,7 +56,17 @@ const CategoryList = () => {
               height={32} 
               className={styles.image} 
             />
-            Emerging
+            Mobile
+          </Link>
+          <Link href="/blog" className={`${styles.category} ${styles.games}`}>
+            <Image  
+              src="/culture.png" 
+              alt='' 
+              width={32} 
+              height={32} 
+              className={styles.image} 
+            />
+            Games
           </Link>
       </div>
     </div>
