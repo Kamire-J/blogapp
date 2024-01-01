@@ -11,7 +11,7 @@ const Footer = () => {
           <h1 className={styles.logoText}>devTalk</h1>   
         </div>
         <p className={styles.desc}>
-          Setting short term goals provides relatively easy targets
+          Setting short term goals provides relatively easy targets <br/>
           and the perception of progress is much better.
         </p>
         <div className={styles.icons}>
