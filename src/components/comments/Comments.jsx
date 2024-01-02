@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link'
 import styles from './comment.module.css'
 import Image from 'next/image';
@@ -15,9 +17,7 @@ const Comments = () => {
               <button className={styles.button}>Send</button>
             </div>
           ) : (
-            <Link href="/login">
-              <a className={styles.loginLink}>Login to Write a Comment</a>
-            </Link>
+            <Link href="/login">Login to Write a Comment</Link>
           )}
           <div className={styles.comments}>
             <div className={styles.comment}>
@@ -32,11 +32,11 @@ const Comments = () => {
                         <span className={styles.username}>Jane Doe</span>
                         <span className={styles.date}>31.12.2023</span>
                     </div>
-                    <p className={styles.desc}>
+                </div>
+                <p className={styles.desc}>
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt. 
-                    </p>
-                </div>
+                </p>
             </div>
           </div>
         </div>
