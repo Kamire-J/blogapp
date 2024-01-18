@@ -3,6 +3,13 @@ import styles from './categorylist.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
+const getData = async()=>{
+  const res = await fetch("api/categories", {
+    cache:"no-store",
+  });
+};
+
 const CategoryList = () => {
   return (
     <div className={styles.container}>
