@@ -62,7 +62,7 @@ const Comments = ({postSlug}) => {
                       )}
                       <div className={styles.userInfo}>
                         <span className={styles.username}>{item.user.name}</span>
-                        <span className={styles.date}>{item.createdAt.substring(0, 10)}</span>
+                        <span className={styles.date}>{item.createdAt}</span>
                       </div>
                     </div>
                     <p className={styles.desc}>{item.desc}</p>
