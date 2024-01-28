@@ -33,7 +33,7 @@ const Comments = ({ postSlug }) => {
   const handleSubmit = async () => {
     await fetch("/api/comments", {
       method: "POST",
-      body: JSON.stringify({ desc, postSlug }),
+      body: JSON.stringify({ desc, postSlug:decodeURIComponent(postSlug) }),
     });
     mutate();
   };
@@ -72,7 +72,7 @@ const Comments = ({ postSlug }) => {
                   )}
                   <div className={styles.userInfo}>
                     <span className={styles.username}>{item.user.name}</span>
-                    <span className={styles.date}>{item.createdAt}</span>
+                    <span className={styles.date}>{item.createdAt.substring(0,10)}</span>
                   </div>
                 </div>
                 <p className={styles.desc}>{item.desc}</p>
