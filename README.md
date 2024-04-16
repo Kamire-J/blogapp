@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Blog Application
+This is a personal blog application with blog search capabilities powered by NextJS.
 
 ## Getting Started
 
